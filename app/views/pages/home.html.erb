@@ -28,3 +28,16 @@
     </tr>
   <% end %>
 </table>
+
+<table>
+  <tr>
+    <td>tasks</td>
+    <td>finished</td>
+  </tr>
+  <% @todos.each do |todo| %>
+    <tr>
+      <td><%= todo.tasks%></td>
+      <td><%= todo.finished%></td>
+    </tr>
+  <% end %>
+</table>
